@@ -6,23 +6,26 @@
 
 <h2 align="left"><img src="https://raw.githubusercontent.com/sidbelbase/sidbelbase/master/wave.gif" width="30px">Hi! We are <a href="https://bniajfi.org/">BNIA-JFI</a>.</h2>
 
-This is [BNIA-JFI](http://www.bniajfi.org)'s principal repository for creating Vital Signs Indicators.
+This package was made to help with data handling.
 
 __Included__
-- IPYNB/ Google Colab notebooks with indicator creation notes and scripts.
-- Online documentation and PyPi libraries created from the notebooks.
+- Functions built and used by BNIA for day to day tasks.
+- Made to be shared via IPYNB/ Google Colab notebooks with in-built examples using 100% publicly accessible data & links.
+- Online [documentation](https://bniajfi.org/VitalSigns/)  and [PyPi](https://pypi.org/project/VitalSigns/) libraries created from the notebooks.
 
+[TOC](https://github.com/bniajfi)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bnia/datalab/master?filepath=%2Fnotebooks%2Findex.ipynb)
-[![Binder](https://pete88b.github.io/fastpages/assets/badges/colab.svg)](https://colab.research.google.com/github/bnia/datalab/blob/master/notebooks/index.ipynb)
-[![Binder](https://pete88b.github.io/fastpages/assets/badges/github.svg)](https://github.com/bnia/datalab/tree/master/notebooks/index.ipynb)
+[VitalSigns](https://bniajfi.org/VitalSigns/) uses functions found in our [Dataplay](https://bniajfi.org/dataplay/)  Module and vice-versa.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bnia/VitalSigns/main?filepath=%2Fnotebooks%2Findex.ipynb)
+[![Binder](https://pete88b.github.io/fastpages/assets/badges/colab.svg)](https://colab.research.google.com/github/bnia/VitalSigns/blob/main/notebooks/index.ipynb)
+[![Binder](https://pete88b.github.io/fastpages/assets/badges/github.svg)](https://github.com/bnia/VitalSigns/tree/main/notebooks/index.ipynb)
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-[![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/bnia/VitalSigns/blob/master/LICENSE)
+[![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/bnia/VitalSigns/blob/main/LICENSE)
 [![Active](http://img.shields.io/badge/Status-Active-green.svg)](https://bnia.github.io) 
 [![Python Versions](https://img.shields.io/pypi/pyversions/VitalSigns.svg)](https://pypi.python.org/pypi/VitalSigns/)
-[![GitHub last commit](https://img.shields.io/github/last-commit/bnia/VitalSigns.svg?style=flat)]() 
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/bnia/VitalSigns.svg?style=flat)]()  
 
 [![GitHub stars](https://img.shields.io/github/stars/bnia/VitalSigns.svg?style=social&label=Star)](https://github.com/bnia/VitalSigns) 
 [![GitHub watchers](https://img.shields.io/github/watchers/bnia/VitalSigns.svg?style=social&label=Watch)](https://github.com/bnia/VitalSigns) 
@@ -61,7 +64,9 @@ Prepare the Compare Historic Data
 Do comparison to historic year if exists. Write xlsx.
 
 
-## Install
+## Usage Instructions
+
+### Install the Package
 
 The code is on <a href="https://pypi.org/project/test-template/">PyPI</a> so you can install the scripts as a python library using the command:
 
@@ -72,7 +77,7 @@ The code is on <a href="https://pypi.org/project/test-template/">PyPI</a> so you
 
 Then...
 
-### Examples
+### Import Modules
 
 1) Import the installed module into your code:
 ``` 
@@ -88,7 +93,11 @@ from dataplay.merge import mergeDatasets
 mergeDatasets(left_ds=False, right_ds=False, crosswalk_ds=False,  use_crosswalk = True, left_col=False, right_col=False, crosswalk_left_col = False, crosswalk_right_col = False, merge_how=False, interactive=True)
 ```
 
+### Getting Help
+
 You can get information on the package by using the help command.
+
+Here we look at the package's modules:
 
 ```
 import VitalSigns
@@ -128,14 +137,21 @@ help(VitalSigns)
         0.0.5
     
     FILE
-        /content/drive/My Drive/Software Development Documents/VitalSigns/VitalSigns/__init__.py
+        /usr/local/lib/python3.7/dist-packages/VitalSigns/__init__.py
     
     
 
+
+Lets take a look at what functions the geoms module provides:
 
 ```
+import VitalSigns.acsDownload
 help(VitalSigns.acsDownload)
 ```
+
+    /usr/local/lib/python3.7/dist-packages/VitalSigns/acsDownload.py:27: FutureWarning: Passing a negative integer is deprecated in version 1.0 and will not be supported in future version. Instead, use None to not limit the column width.
+      pd.set_option('display.max_colwidth', -1)
+
 
     Help on module VitalSigns.acsDownload in VitalSigns:
     
@@ -147,15 +163,22 @@ help(VitalSigns.acsDownload)
     
     DATA
         __all__ = ['retrieve_acs_data']
-        __warningregistry__ = {'version': 352, ('Passing a negative integer is...
+        __warningregistry__ = {'version': 268, ('Passing a negative integer is...
     
     FILE
-        /content/drive/My Drive/Software Development Documents/VitalSigns/VitalSigns/acsDownload.py
+        /usr/local/lib/python3.7/dist-packages/VitalSigns/acsDownload.py
     
     
 
+
+    /usr/local/lib/python3.7/dist-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+      """)
+
+
+And here we can look at an individual function and what it expects:
 
 ```
+import VitalSigns.acsDownload
 help(VitalSigns.acsDownload.retrieve_acs_data)
 ```
 
@@ -165,11 +188,22 @@ help(VitalSigns.acsDownload.retrieve_acs_data)
     
 
 
-Here an example:
+## Examples
+
+So heres an example:
+
+
+Import your modules
 
 ```
 from VitalSigns.acsDownload import retrieve_acs_data
 ```
+
+Read in some data
+
+Define our download parameters.
+
+More information on these parameters can be found in the tutorials!
 
 ```
 # Our download function will use Baltimore City's tract, county and state as internal paramters
@@ -184,9 +218,11 @@ year = '17'
 saveAcs = False
 ```
 
+And download the Baltimore City ACS data using the imported VitalSigns library.
+
 ```
 df = retrieve_acs_data(state, county, tract, tableId, year, saveAcs)
-df.head()
+df.head(1)
 ```
 
     Number of Columns 17
@@ -216,39 +252,13 @@ df.head()
       <th>B19001_001E_Total</th>
       <th>B19001_002E_Total_Less_than_$10,000</th>
       <th>B19001_003E_Total_$10,000_to_$14,999</th>
-      <th>B19001_004E_Total_$15,000_to_$19,999</th>
-      <th>B19001_005E_Total_$20,000_to_$24,999</th>
-      <th>B19001_006E_Total_$25,000_to_$29,999</th>
-      <th>B19001_007E_Total_$30,000_to_$34,999</th>
-      <th>B19001_008E_Total_$35,000_to_$39,999</th>
-      <th>B19001_009E_Total_$40,000_to_$44,999</th>
-      <th>B19001_010E_Total_$45,000_to_$49,999</th>
-      <th>B19001_011E_Total_$50,000_to_$59,999</th>
-      <th>B19001_012E_Total_$60,000_to_$74,999</th>
-      <th>B19001_013E_Total_$75,000_to_$99,999</th>
-      <th>B19001_014E_Total_$100,000_to_$124,999</th>
-      <th>B19001_015E_Total_$125,000_to_$149,999</th>
-      <th>B19001_016E_Total_$150,000_to_$199,999</th>
-      <th>B19001_017E_Total_$200,000_or_more</th>
+      <th>...</th>
       <th>state</th>
       <th>county</th>
       <th>tract</th>
     </tr>
     <tr>
       <th>NAME</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -264,118 +274,14 @@ df.head()
       <td>1510</td>
       <td>209</td>
       <td>73</td>
-      <td>94</td>
-      <td>97</td>
-      <td>110</td>
-      <td>119</td>
-      <td>97</td>
-      <td>65</td>
-      <td>36</td>
-      <td>149</td>
-      <td>168</td>
-      <td>106</td>
-      <td>66</td>
-      <td>44</td>
-      <td>50</td>
-      <td>27</td>
+      <td>...</td>
       <td>24</td>
       <td>510</td>
       <td>271002</td>
     </tr>
-    <tr>
-      <th>Census Tract 2604.02</th>
-      <td>1134</td>
-      <td>146</td>
-      <td>29</td>
-      <td>73</td>
-      <td>80</td>
-      <td>41</td>
-      <td>91</td>
-      <td>49</td>
-      <td>75</td>
-      <td>81</td>
-      <td>170</td>
-      <td>57</td>
-      <td>162</td>
-      <td>63</td>
-      <td>11</td>
-      <td>6</td>
-      <td>0</td>
-      <td>24</td>
-      <td>510</td>
-      <td>260402</td>
-    </tr>
-    <tr>
-      <th>Census Tract 2712</th>
-      <td>2276</td>
-      <td>69</td>
-      <td>43</td>
-      <td>41</td>
-      <td>22</td>
-      <td>46</td>
-      <td>67</td>
-      <td>0</td>
-      <td>30</td>
-      <td>30</td>
-      <td>80</td>
-      <td>146</td>
-      <td>321</td>
-      <td>216</td>
-      <td>139</td>
-      <td>261</td>
-      <td>765</td>
-      <td>24</td>
-      <td>510</td>
-      <td>271200</td>
-    </tr>
-    <tr>
-      <th>Census Tract 2804.04</th>
-      <td>961</td>
-      <td>111</td>
-      <td>108</td>
-      <td>61</td>
-      <td>42</td>
-      <td>56</td>
-      <td>37</td>
-      <td>73</td>
-      <td>30</td>
-      <td>31</td>
-      <td>106</td>
-      <td>119</td>
-      <td>74</td>
-      <td>23</td>
-      <td>27</td>
-      <td>24</td>
-      <td>39</td>
-      <td>24</td>
-      <td>510</td>
-      <td>280404</td>
-    </tr>
-    <tr>
-      <th>Census Tract 901</th>
-      <td>1669</td>
-      <td>158</td>
-      <td>124</td>
-      <td>72</td>
-      <td>48</td>
-      <td>108</td>
-      <td>68</td>
-      <td>121</td>
-      <td>137</td>
-      <td>99</td>
-      <td>109</td>
-      <td>191</td>
-      <td>160</td>
-      <td>141</td>
-      <td>28</td>
-      <td>88</td>
-      <td>17</td>
-      <td>24</td>
-      <td>510</td>
-      <td>90100</td>
-    </tr>
   </tbody>
 </table>
+<p>1 rows × 20 columns</p>
 </div>
 
 

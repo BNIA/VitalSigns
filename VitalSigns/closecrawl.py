@@ -24,20 +24,20 @@ from __future__ import absolute_import, print_function, unicode_literals
 from __future__ import absolute_import, print_function, unicode_literals
 
 
-__all__ = ['HEADER', 'URL', 'CASE_PAT', 'CASE_TYPES', 'HTML_DIR', 'HTML_FILE', 'CHECKPOINT', 'NO_CASE', 'FEATURES',
-           'FIELDS', 'INTERNAL_FIELDS', 'Session', 'Spider', 'scrape', 'filter_addr', 'PUNCTUATION', 'street_address',
-           'TITLE_SPLIT_PAT', 'ZIP_STR', 'ZIP_PAT', 'MONEY_STR', 'MONEY_PAT', 'NULL_ADDR', 'STRIP_ADDR', 'Miner',
-           'FEATURES', 'FIELDS', 'INTERNAL_FIELDS', 'temp_output', 'file_array', 'top5', 'Cleaner', 'temp_output',
-           'output', 'df_obj', 'close_crawl', 'args']
+__all__ = ['description', 'HEADER', 'URL', 'CASE_PAT', 'CASE_TYPES', 'HTML_DIR', 'HTML_FILE', 'CHECKPOINT', 'NO_CASE',
+           'FEATURES', 'FIELDS', 'INTERNAL_FIELDS', 'description', 'Session', 'Spider', 'scrape', 'description',
+           'filter_addr', 'PUNCTUATION', 'street_address', 'TITLE_SPLIT_PAT', 'ZIP_STR', 'ZIP_PAT', 'MONEY_STR',
+           'MONEY_PAT', 'NULL_ADDR', 'STRIP_ADDR', 'Miner', 'FEATURES', 'FIELDS', 'INTERNAL_FIELDS', 'temp_output',
+           'file_array', 'description', 'Cleaner', 'temp_output', 'df_obj', 'close_crawl', 'args']
 
 # Cell
 import mechanicalsoup
 mechanicalsoup.__version__
 
 # Cell
-"""settings
+description = """settings
 
-Configuration settings and global variables for the entire project. This file
+Configuration settings and global variables for the entire project. This bit
 is intended to only be used as a non-executable script.
 """
 
@@ -76,25 +76,20 @@ FIELDS = FEATURES + [ "Zip Code", "Partial Cost" ]
 INTERNAL_FIELDS = [ "Business or Organization Name", "Party Type"]
 
 # Cell
-"""local_browser
+description = """local_browser
 
-NOTICE: Close Crawl runs its browser form submissions through Mechanize.
+NOTICE: Close Crawl formerly ran its browser form submissions through Mechanize.
 The module, however, is deprecated and does not support Python 3. The more
 stable and maintained Mechanize and BeautifulSoup wrapper, MechanicalSoup,
-will be replacing the Mechanize methods to support Python 3.
+has since replaced the Mechanize methods to support Python 3.
 
 This module contains the configurations and settings for the browser used for
 crawling and scraping through the pages in Close Crawl. The script contains the
 implementation of the Session class which inherits attributes from the classobj
 mechanize.Browser()
 
-The script works as an internal module for Close Crawl, but can be imported
+The script worked as an internal module for original Close Crawl executable, and could be imported
 as a module for testing purposes.
-
-TODO:
-    Replace deprecated Mechanize with MechanicalSoup
-    Fork Mechanize to support Python3
-
 """
 
 # Cell
@@ -205,8 +200,12 @@ class Session(object):
         # select the only form on the page
         self.browser.select_form('form')
 
+        with open("output1.html", "w") as file:
+            file.write(str( self.browser.page ))
+        chkbxid = self.browser.page.find('input',{'name':'disclaimer'})['value']
+
         # select the checkbox
-        self.browser["disclaimer"] = ['Y']
+        self.browser["disclaimer"] = [chkbxid]
 
         # submit the form
         self.browser.submit_selected()
@@ -344,20 +343,17 @@ class Spider(object):
 scrape = True
 if scrape:
   spider = Spider(
-    case_type='O', year=20,
-    bounds=range(0000, 9000), gui=False
+    case_type=casetype, year=year,
+    bounds=range(lowerbound, upperbound), gui=False
   )
   spider.save_response()
   wait = spider.WAITING_TIME
 
 # Cell
-"""Patterns
+description = """Patterns
 
 Regular expression patterns and string filtering functions implemented in the
 project. This file is intended to only be used as a non-executable script.
-
-TODO:
-    Finish docs
 
 (\d{1,4}\s[\w\s]{1,20}((?:st(reet)?|ln|lane|ave(nue)?|r(?:oa)?d|highway|hwy|
 dr(?:ive)?|sq(uare)?|tr(?:ai)l|c(?:our)?t|parkway|pkwy|cir(cle)?|ter(?:race)?|
@@ -662,10 +658,9 @@ from os import path, remove, walk
 
 temp_output = "temp_data.csv"
 file_array = [filenames for (dirpath, dirnames, filenames) in walk(HTML_DIR)][0]
-top5 = file_array[:1]
 
 # Cell
-"""Cleaner
+description = """Cleaner
 
 This module implements post-scraping cleaning processes on the raw initial
 dataset. Processes include stripping excess strings off Address values,
@@ -952,7 +947,6 @@ class Cleaner(object):
 
 # Cell
 temp_output = "temp_data.csv"
-output = 'outputfile.csv'
 df_obj = Cleaner(temp_output)
 df_obj.init_clean()
 df_obj.download(output)
@@ -978,11 +972,6 @@ from json import dump, dumps, load
 from os import path, remove, walk
 from shutil import rmtree
 from time import time
-
-from cleaner import Cleaner
-from miner import Miner
-from settings import CHECKPOINT, HTML_DIR
-from spider import Spider
 
 # Cell
 def close_crawl(case_type, case_year, output, cases='', lower_bound=0,
@@ -1077,18 +1066,15 @@ def close_crawl(case_type, case_year, output, cases='', lower_bound=0,
         checkpoint.truncate()
 
 
-    print("Crawling runtime: {0:.2f} s".format((end_crawl - start_crawl)))
-    print(
-        "Downloading runtime: {0:.2f} s".format(
-            ((end_crawl - start_crawl) - wait))
-    )
-    print("Mining runtime: {0:.2f} s".format((end_mine - start_mine)))
-    print("Program runtime: {0:.2f} s".format((end - start)))
+    # print("Crawling runtime: {0:.2f} s".format((end_crawl - start_crawl)))
+    # print("Downloading runtime: {0:.2f} s".format( ((end_crawl - start_crawl) - wait)) )
+    # print("Mining runtime: {0:.2f} s".format((end_mine - start_mine)))
+    # print("Program runtime: {0:.2f} s".format((end - start)))
     print("------------ SCRAPING COMPLETED ------------")
 
 
 # Cell
-args = {'type': 'C', 'year': '2014', 'output': 'outputfile.csv', 'file': '', 'lower': '1000', 'upper': '2000', 'debug': '0', 'scrape': True, 'mine': True, 'clean': True}
+args = {'type': 'C', 'year': '2014', 'output': 'outputfile.csv', 'file': '', 'lower': '1000', 'upper': '1010', 'debug': '0', 'scrape': True, 'mine': True, 'clean': True}
 close_crawl(
     case_type=args["type"], case_year=args["year"], output=args["output"],
     cases=args["file"], lower_bound=args["lower"],

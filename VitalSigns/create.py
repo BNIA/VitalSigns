@@ -1149,12 +1149,12 @@ import pandas as pd
 from .acsDownload import retrieve_acs_data
 from dataplay.merge import mergeDatasets
 from dataplay.intaker import Intake
-def createAcsIndicator(state, county, tract, year, tableId, saveAcs,
+def createAcsIndicator(state, county, tract, year, tableId,
                     mergeUrl, merge_left_col, merge_right_col, merge_how, groupBy,
                     aggMethod, method, columnsToInclude, finalFileName=False):
 
   # Pull the data
-  df = retrieve_acs_data(state, county, tract, tableId, year, saveAcs)
+  df = retrieve_acs_data(state, county, tract, tableId, year)
   print('Table: ' + tableId + ', Year: ' + year + ' imported.')
 
   # Get the crosswalk

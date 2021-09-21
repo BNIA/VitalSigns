@@ -3,6 +3,7 @@
 __all__ = ['fdf', 'findf', 'findf', 'findf']
 
 # Cell
+
 %%capture
 # export
 # @title Run: Import Modules
@@ -54,6 +55,7 @@ findf = findf.append({
     'libcard19': (findf['pointsinpolygon'].sum() / findf['tpop10'].sum() * 1000), }, ignore_index=True)
 
 # Cell
+
 %%capture
 # export
 # @title Run: Import Modules

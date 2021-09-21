@@ -24,11 +24,19 @@ from __future__ import absolute_import, print_function, unicode_literals
 from __future__ import absolute_import, print_function, unicode_literals
 
 
-__all__ = ['description', 'HEADER', 'URL', 'CASE_PAT', 'CASE_TYPES', 'HTML_DIR', 'HTML_FILE', 'CHECKPOINT', 'NO_CASE',
-           'FEATURES', 'FIELDS', 'INTERNAL_FIELDS', 'description', 'Session', 'Spider', 'scrape', 'description',
-           'filter_addr', 'PUNCTUATION', 'street_address', 'TITLE_SPLIT_PAT', 'ZIP_STR', 'ZIP_PAT', 'MONEY_STR',
-           'MONEY_PAT', 'NULL_ADDR', 'STRIP_ADDR', 'Miner', 'FEATURES', 'FIELDS', 'INTERNAL_FIELDS', 'temp_output',
-           'file_array', 'description', 'Cleaner', 'temp_output', 'df_obj', 'close_crawl', 'args']
+__all__ = ['casetype', 'year', 'lowerbound', 'upperbound', 'output', 'description', 'HEADER', 'URL', 'CASE_PAT',
+           'CASE_TYPES', 'HTML_DIR', 'HTML_FILE', 'CHECKPOINT', 'NO_CASE', 'FEATURES', 'FIELDS', 'INTERNAL_FIELDS',
+           'description', 'Session', 'Spider', 'description', 'filter_addr', 'PUNCTUATION', 'street_address',
+           'TITLE_SPLIT_PAT', 'ZIP_STR', 'ZIP_PAT', 'MONEY_STR', 'MONEY_PAT', 'NULL_ADDR', 'STRIP_ADDR', 'Miner',
+           'FEATURES', 'FIELDS', 'INTERNAL_FIELDS', 'temp_output', 'description', 'Cleaner', 'description',
+           'close_crawl']
+
+# Cell
+casetype = 'O'
+year = 20
+lowerbound = 0000
+upperbound = 9000
+output = 'outputfile.csv'
 
 # Cell
 import mechanicalsoup
@@ -340,16 +348,6 @@ class Spider(object):
 
 
 # Cell
-scrape = True
-if scrape:
-  spider = Spider(
-    case_type=casetype, year=year,
-    bounds=range(lowerbound, upperbound), gui=False
-  )
-  spider.save_response()
-  wait = spider.WAITING_TIME
-
-# Cell
 description = """Patterns
 
 Regular expression patterns and string filtering functions implemented in the
@@ -657,7 +655,6 @@ class Miner(object):
 from os import path, remove, walk
 
 temp_output = "temp_data.csv"
-file_array = [filenames for (dirpath, dirnames, filenames) in walk(HTML_DIR)][0]
 
 # Cell
 description = """Cleaner
@@ -942,17 +939,12 @@ class Cleaner(object):
         Returns:
             None
         """
+        self.clean_df.rename(columns={"Address": "address"}, inplace=True)
         self.clean_df.to_csv(output_name, index=False)
 
 
 # Cell
-temp_output = "temp_data.csv"
-df_obj = Cleaner(temp_output)
-df_obj.init_clean()
-df_obj.download(output)
-
-# Cell
-"""main
+description = """main
 
 The main executable script for Close Crawl. This file manages types, flags
 and constraints for the case type, year and output data file.
@@ -1039,6 +1031,7 @@ def close_crawl(case_type, case_year, output, cases='', lower_bound=0,
 
         wait = spider.WAITING_TIME
 
+    print('HTML_DIR', HTML_DIR)
     file_array = [filenames for (dirpath, dirnames, filenames)
                   in walk(HTML_DIR)][0]
 
@@ -1058,13 +1051,28 @@ def close_crawl(case_type, case_year, output, cases='', lower_bound=0,
         df_obj.download(output)
 
     print('save')
+
     with open(CHECKPOINT, "r+") as checkpoint:
         checkpoint_data = load(checkpoint)
+        print("checkpoint_data")
+        print(checkpoint_data)
         checkpoint_data["last_case"] = sorted(file_array)[-1].split('.')[0][-4:]
         checkpoint.seek(0)
         checkpoint.write(dumps(checkpoint_data))
         checkpoint.truncate()
 
+    """
+    with open(CHECKPOINT, "r+") as checkpoint:
+        checkpoint_data = load(checkpoint)
+
+        for key, val in data.items():
+            checkpoint_data[key] = val
+
+        checkpoint_data[key] = data
+        checkpoint.seek(0)
+        checkpoint.write(dumps(checkpoint_data))
+        checkpoint.truncate()
+    """
 
     # print("Crawling runtime: {0:.2f} s".format((end_crawl - start_crawl)))
     # print("Downloading runtime: {0:.2f} s".format( ((end_crawl - start_crawl) - wait)) )
@@ -1074,102 +1082,6 @@ def close_crawl(case_type, case_year, output, cases='', lower_bound=0,
 
 
 # Cell
-args = {'type': 'C', 'year': '2014', 'output': 'outputfile.csv', 'file': '', 'lower': '1000', 'upper': '1010', 'debug': '0', 'scrape': True, 'mine': True, 'clean': True}
-close_crawl(
-    case_type=args["type"], case_year=args["year"], output=args["output"],
-    cases=args["file"], lower_bound=args["lower"],
-    upper_bound=args["upper"], debug=args["debug"],
-    scrape=args["scrape"], mine=args["mine"],
-    clean=args["clean"]
-)
-
-# Cell
-"""cliargs
-
-The main command line script for Close Crawl. This file manages types, flags
-and constraints for the case type, year and output data file as well as the
-processing options.
-
-Parameters:
-  {O,C}        | Type of foreclosure cases
-  year         | Year of foreclosure cases
-  output       | Path of output file
-
-Optional parameters:
-  -h, --help   | Show this help message and exit
-  -v, --version| Show program's version number and exit
-  -l, --lower  | Lower bound of range of cases
-  -u, --upper  | Upper bound of range of cases
-  -f, --file   | Path of JSON array of cases
-  -d, --debug  | Debug mode
-  -s, --scrape | Scrape only
-  -m, --mine   | Mine only
-  -c, --clean  | Clean only
-
-Usage:
-    $ python cliarg.py [-h] [-v] [-l] [-u] [-f] [-d] [-s] [-m] [-c]
-                  {O,C} year output
-
-Example usages:
-    $ python cliarg.py -l=50 -u=3500 -d -s -m C 2016 output.csv
-    $ python cliarg.py -c="cases_to_scrape.json" -d O 2014 output01.csv
-"""
-
-# Cell
 #nbdev_comment from __future__ import absolute_import, print_function, unicode_literals
 import sys
 from textwrap import dedent
-
-from modules import main
-
-# Cell
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-if __name__ == "__main__":
-
-    args = {}
-
-    args["type"] = input("Enter type of case (1 char: {C, O}): ")
-    args["year"] = input("Enter year of case (4 digit int): ")
-    args["output"] = input("Enter name of output file (CSV file path): ")
-
-    opt = int(input("Enter 0 for manual parameters or 1 for automatic: "))
-    if bool(opt):
-        args["file"] = input("Enter name of cases file (JSON file path): ")
-        args["lower"] = args["upper"] = 0
-
-    else:
-        args["file"] = ""
-        args["lower"] = input("Enter lower bound of cases (1-4 digit int): ")
-        args["upper"] = input("Enter upper bound of cases (1-4 digit int): ")
-
-    args["debug"] = input(
-        "Enter 0 for default mode, 1 for debug (1 digit int): "
-    )
-
-    print(
-        dedent(
-            """Processing options:\n\n"""
-            """For the following options, enter 0 to disable or 1 to enable."""
-            """\nNOTE: The script will exit if all but the mining step is """
-            """enabled - data cannot be cleaned without being mined first."""
-        )
-    )
-
-    args["scrape"] = bool(input("Scrape: {0, 1}: "))
-    args["mine"] = bool(input("Mine: {0, 1}: "))
-    args["clean"] = bool(input("Clean: {0, 1}: "))
-
-    # exit script if all but the mining step is enabled
-    if (args["scrape"] and not(args["mine"]) and args["clean"]):
-        sys.exit("\nData cannot be cleaned without being mined first.")
-
-    print (args)
-    main.close_crawl(
-        case_type=args["type"], case_year=args["year"], output=args["output"],
-        cases=args["file"], lower_bound=args["lower"],
-        upper_bound=args["upper"], debug=args["debug"],
-        scrape=args["scrape"], mine=args["mine"],
-        clean=args["clean"]
-    )

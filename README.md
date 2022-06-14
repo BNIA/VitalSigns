@@ -145,7 +145,7 @@ from VitalSigns.create import createAcsIndicator, age5
 
 Once the script has been imported, we can now create the Baltimore City indicators.
 ```
-mergeUrl = 'https://raw.githubusercontent.com/gparedes10/2022VitalSigns/main/CSA_2010_and_2020.csv'
+mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv'
 merge_left_col = 'tract'
 merge_right_col= 'TRACTCE' 
 merge_how = 'outer'
@@ -221,7 +221,7 @@ from VitalSigns.create import createAcsIndicator, racdiv
 
 Once the script has been imported, we can now create the Baltimore City indicators.
 ```
-mergeUrl = 'https://raw.githubusercontent.com/gparedes10/2022VitalSigns/main/CSA_2010_and_2020.csv'
+mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv'
 merge_left_col = 'tract'
 merge_right_col= 'TRACTCE' 
 merge_how = 'outer'

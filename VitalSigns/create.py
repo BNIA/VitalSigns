@@ -269,7 +269,7 @@ def racdiv(df, columnsToInclude):
   chosen_year = str(input("Please enter your chosen year again (i.e., '17', '20'): "))
   if(int(chosen_year)) <= 19:
     fi_hisp = createAcsIndicator(state = '24', county = '510', tract = '*' , year = chosen_year, tableId = 'B03002',
-                      mergeUrl = 'https://raw.githubusercontent.com/gparedes10/2022VitalSigns/main/CSA_2010_and_2020.csv', 
+                      mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv', 
                       merge_left_col = 'tract',
                       merge_right_col = 'TRACTCE',
                       merge_how = 'outer',
@@ -280,7 +280,7 @@ def racdiv(df, columnsToInclude):
                       finalFileName=False)
   else:
     fi_hisp = createAcsIndicator(state = '24', county = '510', tract = '*' , year = chosen_year, tableId = 'B03002',
-                      mergeUrl = 'https://raw.githubusercontent.com/gparedes10/2022VitalSigns/main/CSA_2010_and_2020.csv', 
+                      mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv', 
                       merge_left_col = 'tract',
                       merge_right_col = 'TRACTCE',
                       merge_how = 'outer',

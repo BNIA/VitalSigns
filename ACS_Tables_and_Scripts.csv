@@ -1,0 +1,47 @@
+﻿Table ID,Script(s),Indicator Name
+B01001,age5,Percent of population under 5 years old
+,age18,Percent of population 5-17 years old
+,age24,Percent of population 18-24 years old
+,age64,Percent of population 25-64 years old
+,age65,Percent of population 65 years and over
+B02001,racdiv,Racial Diversity Index
+B03002,hisp,Percent of residents - Hispanic
+,paa,Percent of residents - Black/African American (Non-Hispanic)
+,pwhite,Percent of residents - White/Caucasian (Non-Hispanic)
+,pasi,Percent of residents - Asian (Non-Hispanic)
+,p2more,Percent of Residents - Two or More Races (Non-Hispanic)
+,ppac,"Percent of Residents - All Other Races (Hawaiian/ Pacific Islander, Alaskan/ Native American Other Race) (Non-Hispanic)"
+B06009,bahigher,Percent Population (25 Years and over) with a Bachelor's Degree or Above
+,hsdipl,Percent Population (25 Years and over) With High School Diploma and Some College or Associates Degree
+,lesshs,Percent Population (25 Years and over) With Less Than a High School Diploma or GED
+B08101,carpool,Percent of Population that Carpool to Work
+,drvalone,Percent of Population that Drove Alone to Work
+,pubtran,Percent of Population that Uses Public Transportation to Get to Work
+,walked,Percent of Population that Walks to Work
+,othercom,"Percent of Population Using Other Means to Commute to Work (Taxi, Motorcycle, Bicycle, Other)"
+B08303,trav14,Percent of Employed Population with Travel Time to Work of 0-14 Minutes
+,trav29,Percent of Employed Population with Travel Time to Work of 15-29 Minutes
+,trav44,Percent of Employed Population with Travel Time to Work of 30-44 Minutes 
+,trav45,Percent of Employed Population with Travel Time to Work of 45 Minutes and Over
+B08201,novhcl,Percent of Households with No Vehicles Available
+B11005,hhs,Total Number of Households
+,fam,Percent of Households with Children Under 18
+,femhhs,Percent of Female-Headed Households with Children Under 18
+B14005,sclemp,Percentage of Population aged 16-19 in School and/or Employed
+B17017,hhpov,Percent of Family Households Living Below the Poverty Line
+B17001,hhchpov,Percent of Children Living Below the Poverty Line
+B19001,mhhi,Median Household Income
+,hh25inc,"Percent of Households Earning Less than $25,000"
+,hh40inc,"Percent of Households Earning $25,000 to $40,000"
+,hh60inc,"Percent of Households Earning $40,000 to $60,000"
+,hh75inc,"Percent of Households Earning $60,000 to $75,000"
+,hhm75inc,"Percent of Households Earning More than $75,000"
+B23001,unempr,Unemployment Rate
+,empl,Percent Population 16-64 Employed
+,nilf,Population 16-64 Not in Labor Force
+,unempl,Percent Population 16-64 Unemployed and Looking for Work
+B25040,elheat,Percent of Residences Heated by Electricity
+,heatgas,Percent of Residences Heated by Utility Gas
+B25070,affordr,Affordability Index - Rent
+B25091,affordm,Affordability Index - Mortgage
+B28002,nohhint,Percent of Households with No Internet at Home

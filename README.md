@@ -135,7 +135,7 @@ Now that we have the ACS data, we can use any of the scripts in the VitalSigns l
 
 These scripts will download and clean ACS data for Baltimore and then construct indicators from the data.
 
-A list of all the tables used and their respective indicator scripts can be found here -ADD LINK HERE--
+A list of all the tables used and their respective indicator scripts can be found <a href="https://github.com/BNIA/VitalSigns/blob/main/ACS_Tables_and_Scripts.csv/">Here</a>
 
 First, import the script(s)  you would like to use for the ACS data chosen.
 ```
@@ -211,7 +211,7 @@ df.to_csv('YourFileName.csv')
 files.download('YourFileName.csv')
 ```
 ### ACS Calculations and Indicators
-To see the table IDs, Names, and their respective indicators again, click here --ADD LINK HERE--
+To see the table IDs and their respective indicators again, click <a href="https://github.com/BNIA/VitalSigns/blob/main/ACS_Tables_and_Scripts.csv/">Here</a>
 
 Import the racdiv script 
 ```

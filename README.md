@@ -26,7 +26,6 @@ __Included__ (but not limited to)
 
 VitalSigns uses functions found in our Dataplay Module and vice-versa.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bnia/VitalSigns/main?filepath=%2Fnotebooks%2Findex.ipynb)
 [![Binder](https://pete88b.github.io/fastpages/assets/badges/colab.svg)](https://colab.research.google.com/github/bnia/VitalSigns/blob/main/notebooks/index.ipynb)
 [![Binder](https://pete88b.github.io/fastpages/assets/badges/github.svg)](https://github.com/bnia/VitalSigns/tree/main/notebooks/index.ipynb)
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
@@ -88,7 +87,7 @@ help(VitalSigns.acsDownload.retrieve_acs_data)
 ```
 
 ## Example #1 
-Follow this process for all VitalSigns scripts, with the exception of the ractiv indicator (shown in Example #2)
+Follow this process for all VitalSigns scripts. The 'racdiv' script requires one more step, and is shown in example #2
 
 ### ACS Download
 
@@ -104,7 +103,7 @@ from VitalSigns.acsDownload import retrieve_acs_data
 
 Read in some data.
 ```
-#Define our download parameters (tract, county, state, tableId, and state)
+#Define our download parameters (tract, county, state, tableId, state, and year)
 #Our download function will use Baltimore City's tract, county and state as internal parameters
 #Changing these values using different geographic reference codes will change those parameters
 

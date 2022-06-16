@@ -14,7 +14,7 @@ __About__
 - Functions built and used by BNIA for annual Vital Signs data release.
 - Made to be shared via IPYNB/ Google Colab notebooks. 
 - Data may be private and is sometimes public.
-- [PyPi](https://pypi.org/project/VitalSigns2022TEST/) libraries created from the notebooks.
+- [PyPi](https://pypi.org/project/BNIAJFI-VitalSigns/) libraries created from the notebooks.
 
 __Included__ (but not limited to)
 - CloseCrawl - Pull MD Courts data.
@@ -49,7 +49,7 @@ VitalSigns uses functions found in our Dataplay Module and vice-versa.
 
 The code is on <a href="https://pypi.org/project/VitalSigns2022TEST/">PyPI</a> so you can install the scripts as a python library using the command:
 ```
-!pip install VitalSigns2022TEST dataplay geopandas
+!pip install BNIAJFI-VitalSigns dataplay geopandas
 ```
 
 ### Import Modules
@@ -93,7 +93,7 @@ Follow this process for all VitalSigns scripts. The 'racdiv' script requires one
 
 Install the package.
 ```
-!pip install VitalSigns2022TEST dataplay geopandas
+!pip install BNIAJFI-VitalSigns dataplay geopandas
 ```
 
 Import your modules.
@@ -179,7 +179,7 @@ Lets follow the same process we did during example #1
 
 Install the package.
 ```
-!pip install VitalSigns2022TEST dataplay geopandas
+!pip install BNIAJFI-VitalSigns dataplay geopandas
 ```
 
 Import your modules.

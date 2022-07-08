@@ -61,7 +61,7 @@ from VitalSigns.acsDownload import retrieve_acs_data
 
 2) use it
 ```
-retrieve_acs_data(state, county, tract, tableId, year, saveAcs)
+retrieve_acs_data(state, county, tract, tableId, year)
 ```
 
 # Getting Help

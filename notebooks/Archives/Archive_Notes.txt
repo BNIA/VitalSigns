@@ -1,0 +1,2 @@
+-These files have been moved to an archive folder as the code has been updated/changed and the files are no longer used. 
+-Any other files that are not used will be moved to this archive in order to keep the filters used for each indicator available.

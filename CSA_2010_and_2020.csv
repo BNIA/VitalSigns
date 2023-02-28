@@ -1,200 +1,202 @@
-TRACTCE,CSA2010,GEOID10,CSA2020,GEOID
-10000,Baltimore City,,Baltimore City,
-10100,Canton,24510010100,Canton,24510010100
-10200,Patterson Park North & East,24510010200,Patterson Park North & East,24510010200
-10300,Canton,24510010300,Canton,24510010300
-10400,Canton,24510010400,Canton,24510010400
-10500,Fells Point,24510010500,Fells Point,24510010500
-20100,Fells Point,24510020100,Fells Point,24510020100
-20200,Fells Point,24510020200,Fells Point,24510020200
-20300,Fells Point,24510020300,Fells Point,24510020300
-30100,Harbor East/Little Italy,24510030100,Harbor East/Little Italy,24510030100
-30200,Harbor East/Little Italy,24510030200,Harbor East/Little Italy,24510030200
-40100,Downtown/Seton Hill,24510040100,Downtown/Seton Hill,24510040100
-40200,Downtown/Seton Hill,24510040200,Downtown/Seton Hill,24510040200
-60100,Patterson Park North & East,24510060100,Patterson Park North & East,24510060100
-60200,Patterson Park North & East,24510060200,Patterson Park North & East,24510060200
-60300,Patterson Park North & East,24510060300,Patterson Park North & East,24510060300
-60400,Oldtown/Middle East,24510060400,Oldtown/Middle East,24510060400
-70100,Madison/East End,24510070100,Madison/East End,24510070100
-70200,Madison/East End,24510070200,Madison/East End,24510070200
-70300,Madison/East End,24510070300,Madison/East End,24510070300
-70400,Oldtown/Middle East,24510070400,Oldtown/Middle East,24510070400
-80101,Belair-Edison,24510080101,Belair-Edison,24510080101
-80102,Belair-Edison,24510080102,Belair-Edison,24510080102
-80200,Clifton-Berea,24510080200,Clifton-Berea,24510080200
-80301,Clifton-Berea,24510080301,Clifton-Berea,24510080301
-80302,Clifton-Berea,24510080302,Clifton-Berea,24510080302
-80400,Clifton-Berea,24510080400,Clifton-Berea,24510080400
-80500,Clifton-Berea,24510080500,Clifton-Berea,24510080500
-80600,Greenmount East,24510080600,Oliver/Johnson Square,24510080600
-80700,Greenmount East,24510080700,Oliver/Johnson Square,24510080700
-80800,Oldtown/Middle East,24510080800,Oldtown/Middle East,24510080800
-90100,Greater Govans,24510090100,Greater Govans,24510090100
-90200,Northwood,24510090200,Northwood,24510090200
-90300,The Waverlies,24510090300,The Waverlies,24510090300
-90400,The Waverlies,24510090400,The Waverlies,24510090400
-90500,The Waverlies,24510090500,The Waverlies,24510090500
-90600,Midway/Coldstream,24510090600,Midway/Coldstream,24510090600
-90700,Midway/Coldstream,24510090700,Midway/Coldstream,24510090700
-90800,Midway/Coldstream,24510090800,Midway/Coldstream,24510090800
-90900,Greenmount East,24510090900,Oliver/Johnson Square,24510090900
-100100,Greenmount East,24510100100,Oliver/Johnson Square,24510100100
-100200,Oldtown/Middle East,24510100200,Oldtown/Middle East,24510100200
-100300,Unassigned -- Jail,24510100300,Unassigned -- Jail,24510100300
-110100,Midtown,24510110100,Midtown,24510110100
-110200,Midtown,24510110200,Midtown,24510110200
-120100,North Baltimore/Guilford/Homeland,24510120100,North Baltimore/Guilford/Homeland,24510120100
-120201,Greater Charles Village/Barclay,24510120201,Greater Charles Village/Barclay,24510120201
-120202,Greater Charles Village/Barclay,24510120202,Greater Charles Village/Barclay,24510120202
-120300,Greater Charles Village/Barclay,24510120300,Greater Charles Village/Barclay,24510120300
-120400,Greater Charles Village/Barclay,24510120400,Greater Charles Village/Barclay,24510120400
-120500,Midtown,24510120500,Midtown,24510120500
-120600,Greater Charles Village/Barclay,24510120600,Greater Charles Village/Barclay,24510120600
-120700,Medfield/Hampden/Woodberry/Remington,24510120700,Hampden/Remington,24510120700
-130100,Penn North/Reservoir Hill,24510130100,Penn North/Reservoir Hill,24510130100
-130200,Penn North/Reservoir Hill,24510130200,Penn North/Reservoir Hill,24510130200
-130300,Penn North/Reservoir Hill,24510130300,Penn North/Reservoir Hill,24510130300
-130400,Penn North/Reservoir Hill,24510130400,Penn North/Reservoir Hill,24510130400
-130600,Medfield/Hampden/Woodberry/Remington,24510130600,Hampden/Remington,24510130600
-130700,Medfield/Hampden/Woodberry/Remington,24510130700,Hampden/Remington,24510130700
-130803,Medfield/Hampden/Woodberry/Remington,24510130803,Hampden/Remington,24510130803
-130804,Medfield/Hampden/Woodberry/Remington,24510130804,Hampden/Remington,24510130804
-130805,Mount Washington/Coldspring,24510130805,Mount Washington/Coldspring,24510130805
-130806,Medfield/Hampden/Woodberry/Remington,24510130806,Hampden/Remington,24510130806
-140100,Midtown,24510140100,Midtown,24510140100
-140200,Upton/Druid Heights,24510140200,Upton/Druid Heights,24510140200
-140300,Upton/Druid Heights,24510140300,Upton/Druid Heights,24510140300
-150100,Sandtown-Winchester/Harlem Park,24510150100,Sandtown-Winchester/Harlem Park,24510150100
-150200,Sandtown-Winchester/Harlem Park,24510150200,Sandtown-Winchester/Harlem Park,24510150200
-150300,Greater Rosemont,24510150300,Greater Rosemont,24510150300
-150400,Greater Mondawmin,24510150400,Greater Mondawmin,24510150400
-150500,Greater Mondawmin,24510150500,Greater Mondawmin,24510150500
-150600,Greater Rosemont,24510150600,Greater Rosemont,24510150600
-150701,Greater Mondawmin,24510150701,Greater Mondawmin,24510150701
-150702,Greater Mondawmin,24510150702,Greater Mondawmin,24510150702
-150800,Forest Park/Walbrook,24510150800,Forest Park/Walbrook,24510150800
-150900,Forest Park/Walbrook,24510150900,Forest Park/Walbrook,24510150900
-151000,Dorchester/Ashburton,24510151000,Dorchester/Ashburton,24510151000
-151100,Dorchester/Ashburton,24510151100,Dorchester/Ashburton,24510151100
-151200,Southern Park Heights,24510151200,Southern Park Heights,24510151200
-151300,Southern Park Heights,24510151300,Southern Park Heights,24510151300
-160100,Sandtown-Winchester/Harlem Park,24510160100,Sandtown-Winchester/Harlem Park,24510160100
-160200,Sandtown-Winchester/Harlem Park,24510160200,Sandtown-Winchester/Harlem Park,24510160200
-160300,Sandtown-Winchester/Harlem Park,24510160300,Sandtown-Winchester/Harlem Park,24510160300
-160400,Sandtown-Winchester/Harlem Park,24510160400,Sandtown-Winchester/Harlem Park,24510160400
-160500,Greater Rosemont,24510160500,Greater Rosemont,24510160500
-160600,Greater Rosemont,24510160600,Greater Rosemont,24510160600
-160700,Greater Rosemont,24510160700,Greater Rosemont,24510160700
-160801,Edmondson Village,24510160801,Edmondson Village,24510160801
-160802,Edmondson Village,24510160802,Edmondson Village,24510160802
-170100,Downtown/Seton Hill,24510170100,Downtown/Seton Hill,24510170100
-170200,Upton/Druid Heights,24510170200,Upton/Druid Heights,24510170200
-170300,Upton/Druid Heights,24510170300,Upton/Druid Heights,24510170300
-180300,Poppleton/The Terraces/Hollins Market,24510180300,Poppleton/The Terraces/Hollins Market,24510180300
-190100,Southwest Baltimore,24510190100,Southwest Baltimore,24510190100
-190200,Southwest Baltimore,24510190200,Southwest Baltimore,24510190200
-190300,Southwest Baltimore,24510190300,Southwest Baltimore,24510190300
-200100,Southwest Baltimore,24510200100,Southwest Baltimore,24510200100
-200200,Southwest Baltimore,24510200200,Southwest Baltimore,24510200200
-200300,Southwest Baltimore,24510200300,Southwest Baltimore,24510200300
-200400,Southwest Baltimore,24510200400,Southwest Baltimore,24510200400
-200500,Southwest Baltimore,24510200500,Southwest Baltimore,24510200500
-200600,Allendale/Irvington/S. Hilton,24510200600,Allendale/Irvington/S. Hilton,24510200600
-200701,Allendale/Irvington/S. Hilton,24510200701,Allendale/Irvington/S. Hilton,24510200701
-200702,Allendale/Irvington/S. Hilton,24510200702,Allendale/Irvington/S. Hilton,24510200702
-200800,Allendale/Irvington/S. Hilton,24510200800,Allendale/Irvington/S. Hilton,24510200800
-210100,Washington Village/Pigtown,24510210100,Pigtown/Carroll Park,24510210100
-210200,Washington Village/Pigtown,24510210200,Pigtown/Carroll Park,24510210200
-220100,Inner Harbor/Federal Hill,24510220100,Inner Harbor/Federal Hill,24510220100
-230100,Inner Harbor/Federal Hill,24510230100,Inner Harbor/Federal Hill,24510230100
-230200,Inner Harbor/Federal Hill,24510230200,Inner Harbor/Federal Hill,24510230200
-230300,South Baltimore,24510230300,South Baltimore,24510230300
-240100,South Baltimore,24510240100,South Baltimore,24510240100
-240200,Inner Harbor/Federal Hill,24510240200,Inner Harbor/Federal Hill,24510240200
-240300,Inner Harbor/Federal Hill,24510240300,Inner Harbor/Federal Hill,24510240300
-240400,South Baltimore,24510240400,South Baltimore,24510240400
-250101,Beechfield/Ten Hills/West Hills,24510250101,Beechfield/Ten Hills/West Hills,24510250101
-250102,Allendale/Irvington/S. Hilton,24510250102,Allendale/Irvington/S. Hilton,24510250102
-250103,Morrell Park/Violetville,24510250103,Morrell Park/Violetville,24510250103
-250203,Cherry Hill,24510250203,Cherry Hill,24510250203
-250204,Cherry Hill,24510250204,Cherry Hill,24510250204
-250205,Westport/Mount Winans/Lakeland,24510250205,Westport/Mount Winans/Lakeland,24510250205
-250206,Morrell Park/Violetville,24510250206,Morrell Park/Violetville,24510250206
-250207,Cherry Hill,24510250207,Cherry Hill,24510250207
-250301,Westport/Mount Winans/Lakeland,24510250301,Westport/Mount Winans/Lakeland,24510250301
-250303,Morrell Park/Violetville,24510250303,Morrell Park/Violetville,24510250303
-250401,Brooklyn/Curtis Bay/Hawkins Point,24510250401,Brooklyn/Curtis Bay/Hawkins Point,24510250401
-250402,Brooklyn/Curtis Bay/Hawkins Point,24510250402,Brooklyn/Curtis Bay/Hawkins Point,24510250402
-250500,Brooklyn/Curtis Bay/Hawkins Point,24510250500,Brooklyn/Curtis Bay/Hawkins Point,24510250500
-250600,Brooklyn/Curtis Bay/Hawkins Point,24510250600,Brooklyn/Curtis Bay/Hawkins Point,24510250600
-260101,Cedonia/Frankford,24510260101,Cedonia/Frankford,24510260101
-260102,Cedonia/Frankford,24510260102,Cedonia/Frankford,24510260102
-260201,Cedonia/Frankford,24510260201,Cedonia/Frankford,24510260201
-260202,Cedonia/Frankford,24510260202,Cedonia/Frankford,24510260202
-260203,Cedonia/Frankford,24510260203,Cedonia/Frankford,24510260203
-260301,Belair-Edison,24510260301,Belair-Edison,24510260301
-260302,Belair-Edison,24510260302,Belair-Edison,24510260302
-260303,Claremont/Armistead,24510260303,Orchard Ridge/Armistead,24510260303
-260401,Claremont/Armistead,24510260401,Orchard Ridge/Armistead,24510260401
-260402,Claremont/Armistead,24510260402,Orchard Ridge/Armistead,24510260402
-260403,Claremont/Armistead,24510260403,Orchard Ridge/Armistead,24510260403
-260404,Orangeville/East Highlandtown,24510260404,Greentown/Bayview,24510260404
-260501,Orangeville/East Highlandtown,24510260501,Greentown/Bayview,24510260501
-260604,Southeastern,24510260604,Southeastern,24510260604
-260605,Southeastern,24510260605,Southeastern,24510260605
-260700,Orangeville/East Highlandtown,24510260700,Greentown/Bayview,24510260700
-260800,Highlandtown,24510260800,Highlandtown,24510260800
-260900,Highlandtown,24510260900,Highlandtown,24510260900
-261000,Patterson Park North & East,24510261000,Patterson Park North & East,24510261000
-261100,Highlandtown,24510261100,Highlandtown,24510261100
-270101,Lauraville,24510270101,Greater Lauraville,24510270101
-270102,Lauraville,24510270102,Greater Lauraville,24510270102
-270200,Lauraville,24510270200,Greater Lauraville,24510270200
-270301,Lauraville,24510270301,Greater Lauraville,24510270301
-270302,Lauraville,24510270302,Greater Lauraville,24510270302
-270401,Hamilton,24510270401,Hamilton,24510270401
-270402,Hamilton,24510270402,Hamilton,24510270402
-270501,Harford/Echodale,24510270501,Hamilton Hills,24510270501
-270502,Hamilton,24510270502,Hamilton,24510270502
-270600,Harford/Echodale,24510270600,Hamilton Hills,24510270600
-270701,Harford/Echodale,24510270701,Hamilton Hills,24510270701
-270702,Harford/Echodale,24510270702,Hamilton Hills,24510270702
-270703,Harford/Echodale,24510270703,Hamilton Hills,24510270703
-270801,Loch Raven,24510270801,Loch Raven,24510270801
-270802,Loch Raven,24510270802,Loch Raven,24510270802
-270803,Loch Raven,24510270803,Loch Raven,24510270803
-270804,Chinquapin Park/Belvedere,24510270804,Chinquapin Park/Belvedere,24510270804
-270805,Chinquapin Park/Belvedere,24510270805,Chinquapin Park/Belvedere,24510270805
-270901,Northwood,24510270901,Northwood,24510270901
-270902,Northwood,24510270902,Northwood,24510270902
-270903,Northwood,24510270903,Northwood,24510270903
-271001,Greater Govans,24510271001,Greater Govans,24510271001
-271002,Greater Govans,24510271002,Greater Govans,24510271002
-271101,North Baltimore/Guilford/Homeland,24510271101,North Baltimore/Guilford/Homeland,24510271101
-271102,North Baltimore/Guilford/Homeland,24510271102,North Baltimore/Guilford/Homeland,24510271102
-271200,North Baltimore/Guilford/Homeland,24510271200,North Baltimore/Guilford/Homeland,24510271200
-271300,Greater Roland Park/Poplar Hill,24510271300,Greater Roland Park/Poplar Hill,24510271300
-271400,Greater Roland Park/Poplar Hill,24510271400,Greater Roland Park/Poplar Hill,24510271400
-271501,Mount Washington/Coldspring,24510271501,Mount Washington/Coldspring,24510271501
-271503,Greater Roland Park/Poplar Hill,24510271503,Greater Roland Park/Poplar Hill,24510271503
-271600,Southern Park Heights,24510271600,Southern Park Heights,24510271600
-271700,Pimlico/Arlington/Hilltop,24510271700,Pimlico/Arlington/Hilltop,24510271700
-271801,Pimlico/Arlington/Hilltop,24510271801,Pimlico/Arlington/Hilltop,24510271801
-271802,Pimlico/Arlington/Hilltop,24510271802,Pimlico/Arlington/Hilltop,24510271802
-271900,Glen-Fallstaff,24510271900,Glen-Fallstaff,24510271900
-272003,Cross-Country/Cheswolde,24510272003,Cross-Country/Cheswolde,24510272003
-272004,Cross-Country/Cheswolde,24510272004,Cross-Country/Cheswolde,24510272004
-272005,Cross-Country/Cheswolde,24510272005,Cross-Country/Cheswolde,24510272005
-272006,Glen-Fallstaff,24510272006,Glen-Fallstaff,24510272006
-272007,Glen-Fallstaff,24510272007,Glen-Fallstaff,24510272007
-280101,Glen-Fallstaff,24510280101,Glen-Fallstaff,24510280101
-280102,Howard Park/West Arlington,24510280102,Howard Park/West Arlington,24510280102
-280200,Howard Park/West Arlington,24510280200,Howard Park/West Arlington,24510280200
-280301,Dickeyville/Franklintown,24510280301,Dickeyville/Franklintown,24510280301
-280302,Forest Park/Walbrook,24510280302,Forest Park/Walbrook,24510280302
-280401,Beechfield/Ten Hills/West Hills,24510280401,Beechfield/Ten Hills/West Hills,24510280401
-280402,Edmondson Village,24510280402,Edmondson Village,24510280402
-280403,Beechfield/Ten Hills/West Hills,24510280403,Beechfield/Ten Hills/West Hills,24510280403
-280404,Allendale/Irvington/S. Hilton,24510280404,Allendale/Irvington/S. Hilton,24510280404
-280500,Oldtown/Middle East,24510280500,Oldtown/Middle East,24510280500
+TRACTCE,GEOID10,CSA2010,TRACT20,GEOID,CSA2020
+10000,,Baltimore City,10000,,Baltimore City
+10100,24510010100,Canton,10100,24510010100,Canton
+10200,24510010200,Patterson Park North & East,10200,24510010200,Patterson Park North & East
+10300,24510010300,Canton,10300,24510010300,Canton
+10400,24510010400,Canton,10400,24510010400,Canton
+10500,24510010500,Fells Point,10500,24510010500,Fells Point
+20100,24510020100,Fells Point,20100,24510020100,Fells Point
+20200,24510020200,Fells Point,20200,24510020200,Fells Point
+20300,24510020300,Fells Point,20300,24510020300,Fells Point
+30100,24510030100,Harbor East/Little Italy,30100,24510030100,Harbor East/Little Italy
+30200,24510030200,Harbor East/Little Italy,30200,24510030200,Harbor East/Little Italy
+40100,24510040100,Downtown/Seton Hill,40100,24510040100,Downtown/Seton Hill
+40200,24510040200,Downtown/Seton Hill,40200,24510040200,Downtown/Seton Hill
+60100,24510060100,Patterson Park North & East,60100,24510060100,Patterson Park North & East
+60200,24510060200,Patterson Park North & East,60200,24510060200,Patterson Park North & East
+60300,24510060300,Patterson Park North & East,60300,24510060300,Patterson Park North & East
+60400,24510060400,Oldtown/Middle East,60400,24510060400,Oldtown/Middle East
+70100,24510070100,Madison/East End,70100,24510070100,Madison/East End
+70200,24510070200,Madison/East End,70200,24510070200,Madison/East End
+70300,24510070300,Madison/East End,70300,24510070300,Madison/East End
+70400,24510070400,Oldtown/Middle East,70400,24510070400,Oldtown/Middle East
+80101,24510080101,Belair-Edison,80101,24510080101,Belair-Edison
+80102,24510080102,Belair-Edison,80102,24510080102,Belair-Edison
+80200,24510080200,Clifton-Berea,80200,24510080200,Clifton-Berea
+80301,24510080301,Clifton-Berea,80301,24510080301,Clifton-Berea
+80302,24510080302,Clifton-Berea,80302,24510080302,Clifton-Berea
+80400,24510080400,Clifton-Berea,80400,24510080400,Clifton-Berea
+80500,24510080500,Clifton-Berea,80500,24510080500,Clifton-Berea
+80600,24510080600,Greenmount East,80600,24510080600,Oliver/Johnson Square
+80700,24510080700,Greenmount East,80700,24510080700,Oliver/Johnson Square
+80800,24510080800,Oldtown/Middle East,80800,24510080800,Oldtown/Middle East
+90100,24510090100,Greater Govans,90100,24510090100,Greater Govans
+90200,24510090200,Northwood,90200,24510090200,Northwood
+90300,24510090300,The Waverlies,90300,24510090300,The Waverlies
+90400,24510090400,The Waverlies,90400,24510090400,The Waverlies
+90500,24510090500,The Waverlies,90500,24510090500,The Waverlies
+90600,24510090600,Midway/Coldstream,90600,24510090600,Midway/Coldstream
+90700,24510090700,Midway/Coldstream,90700,24510090700,Midway/Coldstream
+90800,24510090800,Midway/Coldstream,90800,24510090800,Midway/Coldstream
+90900,24510090900,Greenmount East,90900,24510090900,Oliver/Johnson Square
+100100,24510100100,Greenmount East,100100,24510100100,Oliver/Johnson Square
+100200,24510100200,Oldtown/Middle East,100200,24510100200,Oldtown/Middle East
+100300,24510100300,Unassigned--Jail,100300,24510100300,Unassigned -- Jail
+110100,24510110100,Midtown,110100,24510110100,Midtown
+110200,24510110200,Midtown,110200,24510110200,Midtown
+120100,24510120100,North Baltimore/Guilford/Homeland,120100,24510120100,North Baltimore/Guilford/Homeland
+120201,24510120201,Greater Charles Village/Barclay,120201,24510120201,Greater Charles Village/Barclay
+120202,24510120202,Greater Charles Village/Barclay,120202,24510120202,Greater Charles Village/Barclay
+120300,24510120300,Greater Charles Village/Barclay,120300,24510120300,Greater Charles Village/Barclay
+120400,24510120400,Greater Charles Village/Barclay,120400,24510120400,Greater Charles Village/Barclay
+120500,24510120500,Midtown,120500,24510120500,Midtown
+270101,24510270101,Lauraville,270101,24510270101,Greater Lauraville
+270102,24510270102,Lauraville,270102,24510270102,Greater Lauraville
+270200,24510270200,Lauraville,270200,24510270200,Greater Lauraville
+270301,24510270301,Lauraville,270301,24510270301,Greater Lauraville
+270302,24510270302,Lauraville,270302,24510270302,Greater Lauraville
+270401,24510270401,Hamilton,270401,24510270401,Hamilton
+270402,24510270402,Hamilton,270402,24510270402,Hamilton
+270501,24510270501,Harford/Echodale,270501,24510270501,Hamilton Hills
+270502,24510270502,Hamilton,270502,24510270502,Hamilton
+270600,24510270600,Harford/Echodale,270600,24510270600,Hamilton Hills
+270701,24510270701,Harford/Echodale,270701,24510270701,Hamilton Hills
+270702,24510270702,Harford/Echodale,270702,24510270702,Hamilton Hills
+270703,24510270703,Harford/Echodale,270703,24510270703,Hamilton Hills
+270801,24510270801,Loch Raven,270801,24510270801,Loch Raven
+270802,24510270802,Loch Raven,270802,24510270802,Loch Raven
+270803,24510270803,Loch Raven,270803,24510270803,Loch Raven
+270804,24510270804,Chinquapin Park/Belvedere,270804,24510270804,Chinquapin Park/Belvedere
+270805,24510270805,Chinquapin Park/Belvedere,270805,24510270805,Chinquapin Park/Belvedere
+270901,24510270901,Northwood,270901,24510270901,Northwood
+270902,24510270902,Northwood,270902,24510270902,Northwood
+270903,24510270903,Northwood,270903,24510270903,Northwood
+271001,24510271001,Greater Govans,271001,24510271001,Greater Govans
+271002,24510271002,Greater Govans,271002,24510271002,Greater Govans
+271101,24510271101,North Baltimore/Guilford/Homeland,271101,24510271101,North Baltimore/Guilford/Homeland
+271102,24510271102,North Baltimore/Guilford/Homeland,271102,24510271102,North Baltimore/Guilford/Homeland
+271200,24510271200,North Baltimore/Guilford/Homeland,271200,24510271200,North Baltimore/Guilford/Homeland
+271300,24510271300,Greater Roland Park/Poplar Hill,271300,24510271300,Greater Roland Park/Poplar Hill
+271400,24510271400,Greater Roland Park/Poplar Hill,271400,24510271400,Greater Roland Park/Poplar Hill
+271501,24510271501,Mount Washington/Coldspring,271501,24510271501,Mount Washington/Coldspring
+271503,24510271503,Greater Roland Park/Poplar Hill,271503,24510271503,Greater Roland Park/Poplar Hill
+271600,24510271600,Southern Park Heights,271600,24510271600,Southern Park Heights
+271700,24510271700,Pimlico/Arlington/Hilltop,271700,24510271700,Pimlico/Arlington/Hilltop
+271801,24510271801,Pimlico/Arlington/Hilltop,271801,24510271801,Pimlico/Arlington/Hilltop
+271802,24510271802,Pimlico/Arlington/Hilltop,271802,24510271802,Pimlico/Arlington/Hilltop
+271900,24510271900,Glen-Fallstaff,271900,24510271900,Glen-Fallstaff
+272003,24510272003,Cross-Country/Cheswolde,272003,24510272003,Cross-Country/Cheswolde
+272004,24510272004,Cross-Country/Cheswolde,272004,24510272004,Cross-Country/Cheswolde
+272005,24510272005,Cross-Country/Cheswolde,272005,24510272005,Cross-Country/Cheswolde
+272006,24510272006,Glen-Fallstaff,272006,24510272006,Glen-Fallstaff
+272007,24510272007,Glen-Fallstaff,272007,24510272007,Glen-Fallstaff
+280101,24510280101,Glen-Fallstaff,280101,24510280101,Glen-Fallstaff
+280102,24510280102,Howard Park/West Arlington,280102,24510280102,Howard Park/West Arlington
+280200,24510280200,Howard Park/West Arlington,280200,24510280200,Howard Park/West Arlington
+280301,24510280301,Dickeyville/Franklintown,280301,24510280301,Dickeyville/Franklintown
+280302,24510280302,Forest Park/Walbrook,280302,24510280302,Forest Park/Walbrook
+280401,24510280401,Beechfield/Ten Hills/West Hills,280401,24510280401,Beechfield/Ten Hills/West Hills
+280402,24510280402,Edmondson Village,280402,24510280402,Edmondson Village
+280403,24510280403,Beechfield/Ten Hills/West Hills,280403,24510280403,Beechfield/Ten Hills/West Hills
+280404,24510280404,Allendale/Irvington/S. Hilton,280404,24510280404,Allendale/Irvington/S. Hilton
+280500,24510280500,Oldtown/Middle East,280500,24510280500,Oldtown/Middle East
+200400,24510200400,Southwest Baltimore,200400,24510200400,Southwest Baltimore
+200500,24510200500,Southwest Baltimore,200500,24510200500,Southwest Baltimore
+200600,24510200600,Allendale/Irvington/S. Hilton,200600,24510200600,Allendale/Irvington/S. Hilton
+200701,24510200701,Allendale/Irvington/S. Hilton,200701,24510200701,Allendale/Irvington/S. Hilton
+200702,24510200702,Allendale/Irvington/S. Hilton,200702,24510200702,Allendale/Irvington/S. Hilton
+200800,24510200800,Allendale/Irvington/S. Hilton,200800,24510200800,Allendale/Irvington/S. Hilton
+210100,24510210100,Washington Village/Pigtown,210100,24510210100,Pigtown/Carroll Park
+210200,24510210200,Washington Village/Pigtown,210200,24510210200,Pigtown/Carroll Park
+220100,24510220100,Inner Harbor/Federal Hill,220100,24510220100,Inner Harbor/Federal Hill
+230100,24510230100,Inner Harbor/Federal Hill,230100,24510230100,Inner Harbor/Federal Hill
+230200,24510230200,Inner Harbor/Federal Hill,230200,24510230200,Inner Harbor/Federal Hill
+230300,24510230300,South Baltimore,230300,24510230300,South Baltimore
+240100,24510240100,South Baltimore,240100,24510240100,South Baltimore
+240200,24510240200,Inner Harbor/Federal Hill,240200,24510240200,Inner Harbor/Federal Hill
+240300,24510240300,Inner Harbor/Federal Hill,240300,24510240300,Inner Harbor/Federal Hill
+240400,24510240400,South Baltimore,240400,24510240400,South Baltimore
+250101,24510250101,Beechfield/Ten Hills/West Hills,250101,24510250101,Beechfield/Ten Hills/West Hills
+250102,24510250102,Allendale/Irvington/S. Hilton,250102,24510250102,Allendale/Irvington/S. Hilton
+250103,24510250103,Morrell Park/Violetville,250103,24510250103,Morrell Park/Violetville
+250203,24510250203,Cherry Hill,250203,24510250203,Cherry Hill
+250204,24510250204,Cherry Hill,250204,24510250204,Cherry Hill
+250205,24510250205,Westport/Mount Winans/Lakeland,250205,24510250205,Westport/Mount Winans/Lakeland
+250206,24510250206,Morrell Park/Violetville,250206,24510250206,Morrell Park/Violetville
+250207,24510250207,Cherry Hill,250207,24510250207,Cherry Hill
+250301,24510250301,Westport/Mount Winans/Lakeland,250301,24510250301,Westport/Mount Winans/Lakeland
+250303,24510250303,Morrell Park/Violetville,250303,24510250303,Morrell Park/Violetville
+250401,24510250401,Brooklyn/Curtis Bay/Hawkins Point,250401,24510250401,Brooklyn/Curtis Bay/Hawkins Point
+250402,24510250402,Brooklyn/Curtis Bay/Hawkins Point,250402,24510250402,Brooklyn/Curtis Bay/Hawkins Point
+250500,24510250500,Brooklyn/Curtis Bay/Hawkins Point,250500,24510250500,Brooklyn/Curtis Bay/Hawkins Point
+250600,24510250600,Brooklyn/Curtis Bay/Hawkins Point,250600,24510250600,Brooklyn/Curtis Bay/Hawkins Point
+260101,24510260101,Cedonia/Frankford,260101,24510260101,Cedonia/Frankford
+260102,24510260102,Cedonia/Frankford,260102,24510260102,Cedonia/Frankford
+260201,24510260201,Cedonia/Frankford,260201,24510260201,Cedonia/Frankford
+260202,24510260202,Cedonia/Frankford,260202,24510260202,Cedonia/Frankford
+260203,24510260203,Cedonia/Frankford,260203,24510260203,Cedonia/Frankford
+260301,24510260301,Belair-Edison,260301,24510260301,Belair-Edison
+260302,24510260302,Belair-Edison,260302,24510260302,Belair-Edison
+260303,24510260303,Claremont/Armistead,260303,24510260303,Orchard Ridge/Armistead
+260401,24510260401,Claremont/Armistead,260401,24510260401,Orchard Ridge/Armistead
+260402,24510260402,Claremont/Armistead,260402,24510260402,Orchard Ridge/Armistead
+260403,24510260403,Claremont/Armistead,260403,24510260403,Orchard Ridge/Armistead
+260404,24510260404,Orangeville/East Highlandtown,260404,24510260404,Greektown/Bayview
+260501,24510260501,Orangeville/East Highlandtown,260501,24510260501,Greektown/Bayview
+260604,24510260604,Southeastern,260604,24510260604,Southeastern
+260605,24510260605,Southeastern,260605,24510260605,Southeastern
+260700,24510260700,Orangeville/East Highlandtown,260700,24510260700,Greektown/Bayview
+260800,24510260800,Highlandtown,260800,24510260800,Highlandtown
+260900,24510260900,Highlandtown,260900,24510260900,Highlandtown
+261000,24510261000,Patterson Park North & East,261000,24510261000,Patterson Park North & East
+261100,24510261100,Highlandtown,261100,24510261100,Highlandtown
+120600,24510120600,Greater Charles Village/Barclay,120600,24510120600,Greater Charles Village/Barclay
+120700,24510120700,Medfield/Hampden/Woodberry/Remington,120700,24510120700,Hampden/Remington
+130100,24510130100,Penn North/Reservoir Hill,130100,24510130100,Penn North/Reservoir Hill
+130200,24510130200,Penn North/Reservoir Hill,130200,24510130200,Penn North/Reservoir Hill
+130300,24510130300,Penn North/Reservoir Hill,130300,24510130300,Penn North/Reservoir Hill
+130400,24510130400,Penn North/Reservoir Hill,130400,24510130400,Penn North/Reservoir Hill
+130600,24510130600,Medfield/Hampden/Woodberry/Remington,130600,24510130600,Hampden/Remington
+130700,24510130700,Medfield/Hampden/Woodberry/Remington,130700,24510130700,Hampden/Remington
+130803,24510130803,Medfield/Hampden/Woodberry/Remington,130803,24510130803,Hampden/Remington
+130804,24510130804,Medfield/Hampden/Woodberry/Remington,130804,24510130804,Hampden/Remington
+130805,24510130805,Mount Washington/Coldspring,130805,24510130805,Mount Washington/Coldspring
+130806,24510130806,Medfield/Hampden/Woodberry/Remington,130806,24510130806,Hampden/Remington
+140100,24510140100,Midtown,140100,24510140100,Midtown
+140200,24510140200,Upton/Druid Heights,140200,24510140200,Upton/Druid Heights
+140300,24510140300,Upton/Druid Heights,140300,24510140300,Upton/Druid Heights
+150100,24510150100,Sandtown-Winchester/Harlem Park,150100,24510150100,Sandtown-Winchester/Harlem Park
+150200,24510150200,Sandtown-Winchester/Harlem Park,150200,24510150200,Sandtown-Winchester/Harlem Park
+150300,24510150300,Greater Rosemont,150300,24510150300,Greater Rosemont
+150400,24510150400,Greater Mondawmin,150400,24510150400,Greater Mondawmin
+150500,24510150500,Greater Mondawmin,150500,24510150500,Greater Mondawmin
+150600,24510150600,Greater Rosemont,150600,24510150600,Greater Rosemont
+150701,24510150701,Greater Mondawmin,150701,24510150701,Greater Mondawmin
+150702,24510150702,Greater Mondawmin,150702,24510150702,Greater Mondawmin
+150800,24510150800,Forest Park/Walbrook,150800,24510150800,Forest Park/Walbrook
+150900,24510150900,Forest Park/Walbrook,150900,24510150900,Forest Park/Walbrook
+151000,24510151000,Dorchester/Ashburton,151000,24510151000,Dorchester/Ashburton
+151100,24510151100,Dorchester/Ashburton,151100,24510151100,Dorchester/Ashburton
+151200,24510151200,Southern Park Heights,151200,24510151200,Southern Park Heights
+151300,24510151300,Southern Park Heights,151300,24510151300,Southern Park Heights
+160100,24510160100,Sandtown-Winchester/Harlem Park,160100,24510160100,Sandtown-Winchester/Harlem Park
+160200,24510160200,Sandtown-Winchester/Harlem Park,160200,24510160200,Sandtown-Winchester/Harlem Park
+160300,24510160300,Sandtown-Winchester/Harlem Park,160300,24510160300,Sandtown-Winchester/Harlem Park
+160400,24510160400,Sandtown-Winchester/Harlem Park,160400,24510160400,Sandtown-Winchester/Harlem Park
+160500,24510160500,Greater Rosemont,160500,24510160500,Greater Rosemont
+160600,24510160600,Greater Rosemont,160600,24510160600,Greater Rosemont
+160700,24510160700,Greater Rosemont,160700,24510160700,Greater Rosemont
+160801,24510160801,Edmondson Village,160801,24510160801,Edmondson Village
+160802,24510160802,Edmondson Village,160802,24510160802,Edmondson Village
+170100,24510170100,Downtown/Seton Hill,170100,24510170100,Downtown/Seton Hill
+170200,24510170200,Upton/Druid Heights,170200,24510170200,Upton/Druid Heights
+170300,24510170300,Upton/Druid Heights,170300,24510170300,Upton/Druid Heights
+180100,24510180100,Poppleton/The Terraces/Hollins Market,280600,24510280600,Poppleton/The Terraces/Hollins Market
+180200,24510180200,Poppleton/The Terraces/Hollins Market,280600,24510280600,Poppleton/The Terraces/Hollins Market
+180300,24510180300,Poppleton/The Terraces/Hollins Market,180300,24510180300,Poppleton/The Terraces/Hollins Market
+190100,24510190100,Southwest Baltimore,190100,24510190100,Southwest Baltimore
+190200,24510190200,Southwest Baltimore,190200,24510190200,Southwest Baltimore
+190300,24510190300,Southwest Baltimore,190300,24510190300,Southwest Baltimore
+200100,24510200100,Southwest Baltimore,200100,24510200100,Southwest Baltimore
+200200,24510200200,Southwest Baltimore,200200,24510200200,Southwest Baltimore
+200300,24510200300,Southwest Baltimore,200300,24510200300,Southwest Baltimore

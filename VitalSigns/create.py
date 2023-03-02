@@ -266,12 +266,12 @@ def racdiv(df, columnsToInclude):
   #Get hisp table and Indicators
   #'hisp' script HAS to be imported for this script to work.
   #User has to re-enter the year they want the indicator for. Maybe there is a way to automate this input???
-  chosen_year = str(input("Please enter your chosen year again (i.e., '17', '20'): "))
-  if(int(chosen_year)) <= 19:
+  chosen_year = int(input("Please enter your chosen year again (i.e., '17', '20'): "))
+  if (chosen_year <= 19):
     fi_hisp = createAcsIndicator(state = '24', county = '510', tract = '*' , year = chosen_year, tableId = 'B03002',
-                      mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv', 
+                      mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2010.csv', 
                       merge_left_col = 'tract',
-                      merge_right_col = 'TRACTCE',
+                      merge_right_col = 'TRACT10',
                       merge_how = 'outer',
                       groupBy = 'CSA2010',
                       aggMethod= 'sum', 
@@ -280,9 +280,9 @@ def racdiv(df, columnsToInclude):
                       finalFileName=False)
   else:
     fi_hisp = createAcsIndicator(state = '24', county = '510', tract = '*' , year = chosen_year, tableId = 'B03002',
-                      mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv', 
+                      mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2020.csv', 
                       merge_left_col = 'tract',
-                      merge_right_col = 'TRACTCE',
+                      merge_right_col = 'TRACT20',
                       merge_how = 'outer',
                       groupBy = 'CSA2020',
                       aggMethod= 'sum', 

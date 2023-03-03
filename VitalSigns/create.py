@@ -8,6 +8,14 @@ __all__ = ['getColName', 'getColByName', 'addKey', 'nullIfEqual', 'sumInts', 'cr
            'empl', 'nilf', 'unempl', 'elheat', 'heatgas', 'affordr', 'affordm', 'nohhint']
 
 
+#Need these imports or the scripts WILL NOT work.
+import geopandas as gpd
+import numpy
+import pandas as pd
+from .acsDownload import retrieve_acs_data
+from dataplay.merge import mergeDatasets
+from dataplay.intaker import Intake
+
 #Cell
 #@title Run This Cell: Misc Function Declarations
 
@@ -32,22 +40,46 @@ def nullIfEqual(df, c1, c2):
 # I'm thinking this doesnt need to be a function..
 def sumInts(df): return df.sum(numeric_only=True)
 
+#Move Baltimore City row to the bottom, and delete "Unassigned--Jail" row
+def baltCity(df):
+    fi = df
 
-#Need these imports or the scripts WILL NOT work.
-import geopandas as gpd
-import numpy
-import pandas as pd
-from .acsDownload import retrieve_acs_data
-from dataplay.merge import mergeDatasets
-from dataplay.intaker import Intake
+    #Delete "Unassigned--Jail" row -> tract 100300
+    fi = fi[fi.tract != 100300] 
+  
+    #Move Baltimore City row to the bottom of the list.
+    bc = fi.loc['Baltimore City'] #save Baltimore City row
+    fi = fi.drop(fi.index[1]) #Remove baltimore City row from fi based on index location - its index location is 1 for both 2010 and 2020 indicators.
+    fi.loc['Baltimore City'] = bc
+    
+    return fi
 
+#Add 2010 CSA Names Column
+def add_CSA2010(df):
+  fi = df
+  CSA_Crosswalk = pd.read_csv("https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2010_2020.csv")
+
+  fi.reset_index(inplace=True)
+  fi = CSA_Crosswalk.merge(fi, on="CSA2020", how="inner")
+
+  return fi
+
+#Add 2020 CSA Names Column
+def add_CSA2020(df):
+  fi = df
+  CSA_Crosswalk = pd.read_csv("https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2010_2020.csv")
+
+  fi.reset_index(inplace=True)
+  fi = CSA_Crosswalk.merge(fi, on="CSA2010", how="inner")
+
+  return fi
 
 #cell
 #@title Run This Cell: Create createIndicator()
 
 def createAcsIndicator(state, county, tract, year, tableId,
                     mergeUrl, merge_left_col, merge_right_col, merge_how, groupBy,
-                    aggMethod, method, columnsToInclude, finalFileName=False):
+                    aggMethod, method, columnsToInclude):
 
   # Pull the data
   df = retrieve_acs_data(state, county, tract, tableId, year)
@@ -78,11 +110,15 @@ def createAcsIndicator(state, county, tract, year, tableId,
   # Create the indicator
   print('Creating Indicator')
   resp = method( df, columnsToInclude)
-  print('Indicator Created')
-  if finalFileName:
-    resp.to_csv(finalFileName, quoting=csv.QUOTE_ALL)
-    print('Indicator Saved')
+  
+  #Append Missing CSA Column (2010 or 2020)
+  print("Appending Missing CSA Column")
+  if int(year) <=19:
+    resp = add_CSA2020(resp)
+  else:
+    resp = add_CSA2010(resp)
 
+  print('Indicator Created')
   return resp
 
 
@@ -276,8 +312,7 @@ def racdiv(df, columnsToInclude):
                       groupBy = 'CSA2010',
                       aggMethod= 'sum', 
                       method = hisp,
-                      columnsToInclude = [],
-                      finalFileName=False)
+                      columnsToInclude = [],)
   else:
     fi_hisp = createAcsIndicator(state = '24', county = '510', tract = '*' , year = chosen_year, tableId = 'B03002',
                       mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2020.csv', 
@@ -287,8 +322,7 @@ def racdiv(df, columnsToInclude):
                       groupBy = 'CSA2020',
                       aggMethod= 'sum', 
                       method = hisp,
-                      columnsToInclude = [],
-                      finalFileName=False)
+                      columnsToInclude = [])
 
   #Column 012E from the Hisp table has a different name on the years prior to 2019. 
   #This  code changes the name of that column automatically for every year prior to 2019.

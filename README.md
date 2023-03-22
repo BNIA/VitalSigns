@@ -112,13 +112,13 @@ county = '510'
 state = '24'
 
 tableId = 'B01001'
-year = '19'
+year = '21'
 ```
 
 And download the Baltimore City ACS data using the imported VitalSigns library.
 ```
 df = retrieve_acs_data(state, county, tract, tableId, year)
-df.head(2)
+df.head()
 ```
 
 Save the ACS data (Use this method ONLY if you are working in Google Colab. Otherwise, you can save the data however you prefer)
@@ -143,13 +143,19 @@ from VitalSigns.create import createAcsIndicator, age5
 ```
 
 Once the script has been imported, we can now create the Baltimore City indicators.
+
+Note: There are two different crosswalk tables (mergeUrl below) depending on the CSA names you want to use (2010 or 2020). If you use the incorrect crosswalk the output will be incorrect for the CSAs whose tract numbers changed in 2020.
+
+For CSA2010 use - https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2010.csv 
+
+For CSA2020 use - https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2020.csv
 ```
-mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv'
+mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2020.csv'
 merge_left_col = 'tract'
-merge_right_col= 'TRACTCE' 
+merge_right_col= 'TRACT20' #For the 2020 CSAs use 'TRACT20', for 2010 CSAs use 'TRACT10'
 merge_how = 'outer'
 
-groupBy = 'CSA2010'     #For the 2020 CSAs use 'CSA2020', for 2010 CSAs use 'CSA2010'
+groupBy = 'CSA2020'     #For the 2020 CSAs use 'CSA2020', for 2010 CSAs use 'CSA2010'
 
 method = age5
 aggMethod = 'sum'
@@ -160,7 +166,7 @@ MyIndicator = createAcsIndicator(state, county, tract, year, tableId,
                     mergeUrl, merge_left_col, merge_right_col, merge_how, groupBy,
                     aggMethod, method, columnsToInclude, finalFileName=False)
 
-MyIndicator.head(2)
+MyIndicator.head()
 ```
 
 Now we can save the Baltimore City indicators (Use this method ONLY if you are working in Google Colab. Otherwise, you can save the data however you prefer)
@@ -194,13 +200,13 @@ county = '510'
 state = '24'
 
 tableId = 'B02001'
-year = '19' #This is the number that the user NEEDS to re-enter once the script asks for an input
+year = '21' #This is the number that the user NEEDS to re-enter once the script asks for an input
 ```
 
 And download the Baltimore City ACS data using the imported VitalSigns library.
 ```
 df = retrieve_acs_data(state, county, tract, tableId, year)
-df.head(2)
+df.head()
 ```
 
 Save the ACS data (Use this method ONLY if you are working in Google Colab. Otherwise, you can save the data however you prefer)
@@ -220,12 +226,12 @@ from VitalSigns.create import createAcsIndicator, racdiv
 
 Once the script has been imported, we can now create the Baltimore City indicators.
 ```
-mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA_2010_and_2020.csv'
+mergeUrl = 'https://raw.githubusercontent.com/BNIA/VitalSigns/main/CSA2020.csv'
 merge_left_col = 'tract'
-merge_right_col= 'TRACTCE' 
+merge_right_col= 'TRACT20' #For the 2020 CSAs use 'TRACT20', for 2010 CSAs use 'TRACT10'
 merge_how = 'outer'
 
-groupBy = 'CSA2010'     #For the 2020 CSAs use 'CSA2020', for 2010 CSAs use 'CSA2010'
+groupBy = 'CSA2020'     #For the 2020 CSAs use 'CSA2020', for 2010 CSAs use 'CSA2010'
 
 method = racdiv
 aggMethod = 'sum'
@@ -236,13 +242,13 @@ MyIndicator = createAcsIndicator(state, county, tract, year, tableId,
                     mergeUrl, merge_left_col, merge_right_col, merge_how, groupBy,
                     aggMethod, method, columnsToInclude, finalFileName=False)
 
-MyIndicator.head(2)
+MyIndicator.head()
 ```
 
 The cell below shows the output while the racdiv script is being run. As you can see on the last line, the script asks the user to re-enter their chosen year. After re-entering the year, the script will finish running, and the racdiv indicator table will be completed.
 ```
-Table: B02001, Year: 19 imported.
-Index(['TRACTCE', 'GEOID10', 'CSA2010', 'GEOID', 'CSA2020'], dtype='object')
+Table: B02001, Year: 21 imported.
+Index(['TRACT20', 'GEOID20', 'CSA2020'], dtype='object')
 Merge file imported
 Both are now merged.
 Aggregating...
